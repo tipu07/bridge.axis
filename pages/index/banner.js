@@ -12,7 +12,7 @@ export default function Banner() {
 					<div className={style.wrapper}>
 						<div className={style.content}>
 							<h1>
-								Pioneering <span>Tomorrow's</span> Procurement
+								Pioneering <span>Tomorrow&lsquo;s</span> Procurement
 							</h1>
 							<p>Bridging the gap between businesses and seamless sourcing solutions.</p>
 							<div className={style.btn_blk}>
