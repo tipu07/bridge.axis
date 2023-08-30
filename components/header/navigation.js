@@ -10,12 +10,12 @@ export default function Navigation(props) {
 			<nav id={style.nav}>
 				<ul id={style.nav_list} className={`${navActive ? style.active : ""}`}>
 					<li>
-						<Link href="/production/about" className={router.pathname === "/production/about" ? style.active : ""}>
+						<Link href="/about" className={router.pathname === "/about" ? style.active : ""}>
 							About Us
 						</Link>
 					</li>
 					<li>
-						<Link href="/production/contact" className={`${style.site_btn} ${style.black}`}>
+						<Link href="/contact" className={`${style.site_btn} ${style.black}`}>
 							Contact Us
 						</Link>
 					</li>

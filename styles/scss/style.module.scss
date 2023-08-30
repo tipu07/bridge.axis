@@ -30,8 +30,11 @@
 		@include trans;
 	}
 	footer & {
-		max-width: 8rem;
+		max-width: 24rem;
 		height: auto;
+		margin-right: 6rem;
+		padding-right: 6rem;
+		border-right: 0.1rem solid #556280;
 	}
 }
 
@@ -345,131 +348,6 @@
 
 /*
 |----------------------------------------------------------------------
-|		Footer
-|----------------------------------------------------------------------
-*/
-
-#footer {
-	background: #323743;
-	color: var(--light);
-	padding: 7rem 0 0;
-	margin-top: auto;
-	overflow: hidden;
-	.main_row {
-		> .column {
-			width: 33.3334%;
-			@include ipad {
-				width: 50%;
-			}
-			@include mobile {
-				width: 100%;
-			}
-		}
-	}
-	a {
-		color: var(--light_gray);
-		&:hover {
-			color: var(--prime_color);
-		}
-	}
-	.title {
-		position: relative;
-		font-size: 1.8rem;
-		font-weight: 500;
-		margin-bottom: 4rem;
-		padding-bottom: 0.5rem;
-		&::after {
-			content: "";
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			width: 5rem;
-			height: 0.3rem;
-			background: var(--prime_color);
-		}
-	}
-	.list {
-		@include list;
-		@include flex($flow: wrap);
-		@include gap(1rem);
-		> li {
-			width: calc(50% - 0.5rem);
-		}
-	}
-	form {
-		.form_blk {
-			background: var(--light);
-			&.input {
-				> .site_btn {
-					margin-right: -1.2rem;
-				}
-			}
-			> p {
-				position: relative;
-				@include flex(center);
-				button {
-					@include pos($r: 1rem);
-					background: var(--light_gray);
-					margin: auto;
-				}
-			}
-		}
-	}
-	.info_list {
-		@include list;
-		> li {
-			@include flex;
-			margin-bottom: 2rem;
-			> a {
-				@include flex(center);
-				> img {
-					width: 2.2rem;
-					min-width: 2.2rem;
-					height: 2.2rem;
-					margin-right: 1rem;
-				}
-			}
-		}
-	}
-	.social_list {
-		@include list;
-		@include flex;
-		@include gap(0.8rem);
-		> li {
-			> a {
-				@include flex(center, center);
-				width: 3.2rem;
-				min-width: 3.2rem;
-				height: 3.2rem;
-				background: #ebe9e9;
-				padding: 0.8rem;
-				border-radius: 0.8rem;
-				&:hover {
-					background: var(--prime_color);
-				}
-			}
-		}
-	}
-	.copyright {
-		background: #333b49;
-		margin-top: 6rem;
-		padding: 2rem 0;
-		text-align: center;
-		p {
-			margin: 0;
-			color: #e7eaec;
-			> a {
-				color: inherit;
-				&:hover {
-					color: var(--prime_color);
-				}
-			}
-		}
-	}
-}
-
-/*
-|----------------------------------------------------------------------
 |		Contact
 |----------------------------------------------------------------------
 */
@@ -571,6 +449,222 @@
 		overflow: hidden;
 		@include mobile {
 			padding: 3rem;
+		}
+	}
+}
+
+/*
+|----------------------------------------------------------------------
+|		Highlight
+|----------------------------------------------------------------------
+*/
+
+#highlight {
+	padding: 6rem 0;
+	overflow: unset;
+	.fig {
+		position: absolute;
+		left: 0;
+		bottom: -18rem;
+		right: 38%;
+		z-index: -1;
+	}
+	.wrapper {
+		@include flex(center);
+		> .image {
+			width: 100%;
+			max-width: 76rem;
+		}
+		> .content {
+			-webkit-box-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+			margin-left: 10rem;
+			.play_btn {
+				width: 12rem;
+				min-width: 12rem;
+				height: 12rem;
+			}
+		}
+	}
+}
+
+/*
+|----------------------------------------------------------------------
+|		Spotlight
+|----------------------------------------------------------------------
+*/
+
+#spotlight {
+	padding: 6rem 0 4rem;
+	overflow: unset;
+	.fig {
+		position: absolute;
+		z-index: -1;
+		&:nth-child(1) {
+			top: -6rem;
+			left: 40%;
+			right: 0;
+		}
+		&:nth-child(2) {
+			top: 38%;
+			left: 0;
+			right: 56%;
+		}
+	}
+	.block {
+		padding-top: 4rem;
+		@include gap(3rem 6rem);
+		&:nth-child(odd) {
+			@include flex(center, $flow: row);
+		}
+		&:nth-child(even) {
+			@include flex(center, $flow: row-reverse);
+		}
+		> .image {
+			width: 100%;
+			max-width: 67rem;
+		}
+		> .content {
+			flex: 1;
+			.line {
+				width: 12rem;
+				height: 0.6rem;
+				background: var(--prime_color);
+				margin: 3.5rem 0 2.5rem;
+			}
+		}
+	}
+}
+
+/*
+|----------------------------------------------------------------------
+|		Subscribe
+|----------------------------------------------------------------------
+*/
+
+#subscribe {
+	margin-bottom: -22rem;
+	z-index: 1;
+	.wrapper {
+		@include bg(100% 100%);
+		padding: 8rem 6rem 10rem;
+		.inner {
+			max-width: 65rem;
+			color: var(--light);
+			margin: auto;
+			p {
+				padding: 0 6rem;
+				opacity: 0.9;
+			}
+		}
+		form {
+			margin: 2rem 0;
+			.form_inner {
+				@include flex;
+				background: var(--light);
+				border-radius: 0.8rem;
+				white-space: nowrap;
+				.input {
+					background: transparent;
+				}
+				button {
+					color: var(--prime_color);
+					font-weight: 600;
+					padding-left: 1.6rem;
+					padding-right: 3rem;
+					margin: 0.6rem 0;
+					border-left: 0.1rem solid var(--prime_color);
+					&:hover {
+						color: var(--black);
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
+|----------------------------------------------------------------------
+|		Footer
+|----------------------------------------------------------------------
+*/
+
+#footer {
+	background: var(--black);
+	color: var(--light_gray);
+	padding: 24rem 0 0;
+	margin-top: auto;
+	overflow: hidden;
+	.top_blk {
+		@include flex(center);
+		margin-bottom: 2.6rem;
+	}
+	.mid_blk {
+		@include flex;
+		padding: 2.6rem 0;
+		border-top: 0.1rem solid #556280;
+		border-bottom: 0.1rem solid #556280;
+	}
+	a {
+		color: var(--light_gray);
+		&:hover {
+			color: var(--prime_color);
+		}
+	}
+	.mini_list {
+		@include list;
+		@include flex($flow: wrap);
+		@include gap(1rem 3rem);
+	}
+	.info_list {
+		@include list;
+		@include flex;
+		@include gap(2rem 4.4rem);
+		margin-left: auto;
+		margin-right: 4.4rem;
+		> li {
+			> a {
+				@include flex(center);
+				> img {
+					width: 2.2rem;
+					min-width: 2.2rem;
+					height: 2.2rem;
+					margin-right: 1rem;
+				}
+			}
+		}
+	}
+	.social_list {
+		@include list;
+		@include flex;
+		@include gap(0.8rem);
+		> li {
+			> a {
+				@include flex(center, center);
+				width: 3.2rem;
+				min-width: 3.2rem;
+				height: 3.2rem;
+				background: var(--light);
+				padding: 0.8rem;
+				border-radius: 0.8rem;
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+	.copyright {
+		padding: 3.5rem 0;
+		text-align: center;
+		p {
+			margin: 0;
+			> a {
+				color: var(--prime_color);
+				&:hover {
+					color: var(--light);
+				}
+			}
 		}
 	}
 }
