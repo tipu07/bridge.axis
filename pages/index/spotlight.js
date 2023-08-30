@@ -46,7 +46,7 @@ export default function Spotlight() {
 								<h2>Workflow Management for Efficient Operations</h2>
 								<div className={style.line}></div>
 								<h4 className={style.text_prime}>Embrace Convenience with Lynkaz Mobile App: Procurement Power at Your Fingertips, Anytime, Anywhere</h4>
-								<p>With the Lynkaz Mobile App, procurement isn't confined to your desk - it travels with you. Offering the full functionality of our platform in a sleek, intuitive mobile design, our app empowers you to manage vendor relations, review documents, approve purchases, and more, right from your device. Experience a procurement revolution that is not just powerful but accessible anytime, anywhere. The future of procurement management is here; it's on your fingertips.</p>
+								<p>With the Lynkaz Mobile App, procurement isn&lsquo;t confined to your desk - it travels with you. Offering the full functionality of our platform in a sleek, intuitive mobile design, our app empowers you to manage vendor relations, review documents, approve purchases, and more, right from your device. Experience a procurement revolution that is not just powerful but accessible anytime, anywhere. The future of procurement management is here; it&lsquo;s on your fingertips.</p>
 							</div>
 						</div>
 					</div>
