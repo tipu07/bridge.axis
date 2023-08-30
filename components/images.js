@@ -1,12 +1,22 @@
 export { default as Favicon } from "/public/images/favicon.png"
 export { default as LogoImage } from "/public/images/logo.svg"
+export { default as LogoImageLight } from "/public/images/logo_light.svg"
 
 export { default as PhoneIcon } from "/public/images/phone_icon.svg"
-export { default as TelegramIcon } from "/public/images/telegram_icon.svg"
+export { default as EnvelopeIcon } from "/public/images/envelope_icon.svg"
+export { default as PlayBtnIcon } from "/public/images/play_btn.svg"
 
 export { default as PhotoMainBanner } from "/public/images/main_banner.png"
 export { default as PhotoMainBannerVector } from "/public/images/main_banner_vector.svg"
 export { default as PhotoAboutBlock } from "/public/images/about_block_bg.svg"
+export { default as PhotoSolutionHighlight } from "/public/images/solution_highlight.png"
+export { default as PhotoSpotlight_01 } from "/public/images/spotlight_01.png"
+export { default as PhotoSpotlight_02 } from "/public/images/spotlight_02.png"
+export { default as PhotoSpotlight_03 } from "/public/images/spotlight_03.png"
+export { default as PhotoSubscribe } from "/public/images/subscribe_vector.svg"
+export { default as PhotoVector_01 } from "/public/images/vector_01.svg"
+export { default as PhotoVector_02 } from "/public/images/vector_02.svg"
+export { default as PhotoVector_03 } from "/public/images/vector_03.svg"
 
 export { default as LineIconBriefcase } from "/public/images/line-icon-briefcase.svg"
 export { default as LineIconCurrent } from "/public/images/line-icon-current.svg"

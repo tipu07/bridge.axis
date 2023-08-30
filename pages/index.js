@@ -3,6 +3,10 @@ import Head from "next/head"
 import Header from "@/components/header/header"
 import Banner from "./index/banner"
 import Intro from "./index/intro"
+import Highlight from "./index/highlight"
+import Spotlight from "./index/spotlight"
+import Subscribe from "./index/subscribe"
+import Footer from "@/components/footer"
 
 export default function Index() {
 	return (
@@ -16,6 +20,10 @@ export default function Index() {
 			<Header />
 			<Banner />
 			<Intro />
+			<Highlight />
+			<Spotlight />
+			<Subscribe />
+			<Footer />
 		</>
 	)
 }
