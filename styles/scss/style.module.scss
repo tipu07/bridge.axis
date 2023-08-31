@@ -348,113 +348,6 @@
 
 /*
 |----------------------------------------------------------------------
-|		Contact
-|----------------------------------------------------------------------
-*/
-
-#contact {
-	.wrapper {
-		background: #f6f7f9;
-		padding: 6rem;
-		border-radius: 1rem;
-		overflow: hidden;
-		@include mobile {
-			padding: 3rem;
-		}
-		.main_row {
-			margin: -5rem;
-			@include ipad_sm {
-				margin: -1.5rem;
-			}
-			> .column {
-				padding: 5rem;
-				@include ipad_sm {
-					padding: 1.5rem;
-				}
-				&:nth-child(1) {
-					width: 55%;
-					@include ipad_sm {
-						width: 100%;
-					}
-				}
-				&:nth-child(2) {
-					width: 45%;
-					@include ipad_sm {
-						width: 100%;
-					}
-				}
-			}
-		}
-		.text {
-			p {
-				font-size: 1.6rem;
-			}
-		}
-	}
-	.input {
-		background: var(--light);
-	}
-	.info_list {
-		@include list;
-		margin: 3rem 0;
-		> li {
-			@include flex;
-			margin-bottom: 1.5rem;
-			> img {
-				width: 2.2rem;
-				min-width: 2.2rem;
-				height: 2.2rem;
-				margin-right: 1rem;
-			}
-			> a {
-				@include flex(center);
-			}
-		}
-	}
-	.social_list {
-		@include list;
-		@include flex;
-		@include gap(0.8rem);
-		> li {
-			> a {
-				@include flex(center, center);
-				width: 3.2rem;
-				min-width: 3.2rem;
-				height: 3.2rem;
-				background: var(--prime_color);
-				padding: 0.8rem;
-				border-radius: 0.8rem;
-				&:hover {
-					background: var(--black);
-				}
-				> img {
-					@include filter(1);
-				}
-			}
-		}
-	}
-}
-
-/*
-|----------------------------------------------------------------------
-|		Terms
-|----------------------------------------------------------------------
-*/
-
-#terms {
-	.wrapper {
-		background: #f6f7f9;
-		padding: 6rem;
-		border-radius: 1rem;
-		overflow: hidden;
-		@include mobile {
-			padding: 3rem;
-		}
-	}
-}
-
-/*
-|----------------------------------------------------------------------
 |		Highlight
 |----------------------------------------------------------------------
 */
@@ -565,8 +458,10 @@
 				background: var(--light);
 				border-radius: 0.8rem;
 				white-space: nowrap;
+				overflow: hidden;
 				.input {
 					background: transparent;
+					border: 0;
 				}
 				button {
 					color: var(--prime_color);
@@ -665,6 +560,116 @@
 					color: var(--light);
 				}
 			}
+		}
+	}
+}
+
+/*
+|----------------------------------------------------------------------
+|		Contact
+|----------------------------------------------------------------------
+*/
+
+#contact {
+	padding: 16rem 0 6rem;
+	margin-top: -8rem;
+	@include bg(56%, top right);
+	.content {
+		max-width: 80rem;
+		font-size: 1.8rem;
+		margin-bottom: 6rem;
+	}
+	.wrapper {
+		@include bg(100% 100%);
+		padding: 10rem 8rem 14rem;
+		.main_row {
+			@include flex($flow: wrap);
+			margin: -1.5rem -4.4rem;
+			@include ipad_sm {
+				margin: -1.5rem;
+			}
+			> .column {
+				padding: 1.5rem 4.4rem;
+				@include ipad_sm {
+					padding: 1.5rem;
+				}
+				&:nth-child(1) {
+					width: 60%;
+					@include ipad_sm {
+						width: 100%;
+					}
+				}
+				&:nth-child(2) {
+					width: 40%;
+					@include ipad_sm {
+						width: 100%;
+					}
+				}
+			}
+		}
+		.form_block,
+		.data_block {
+			color: #48546a;
+			p {
+				font-size: 1.7rem;
+			}
+		}
+	}
+	.info_list {
+		@include list;
+		margin: 3rem 0;
+		> li {
+			@include flex;
+			margin-bottom: 1.5rem;
+			> img {
+				width: 2.2rem;
+				min-width: 2.2rem;
+				height: 2.2rem;
+				margin-right: 1rem;
+			}
+			> a {
+				@include flex(center);
+			}
+		}
+	}
+	.social_list {
+		@include list;
+		@include flex;
+		@include gap(0.8rem);
+		> li {
+			> a {
+				@include flex(center, center);
+				width: 3.2rem;
+				min-width: 3.2rem;
+				height: 3.2rem;
+				background: var(--black);
+				padding: 0.8rem;
+				border-radius: 0.8rem;
+				&:hover {
+					background: var(--prime_color);
+				}
+				> img {
+					@include filter(1);
+				}
+			}
+		}
+	}
+}
+
+/*
+|----------------------------------------------------------------------
+|		Terms
+|----------------------------------------------------------------------
+*/
+
+#terms {
+	.wrapper {
+		background: #f6f7f9;
+		padding: 6rem;
+		border-radius: 1rem;
+		overflow: hidden;
+		@include mobile {
+			padding: 3rem;
 		}
 	}
 }

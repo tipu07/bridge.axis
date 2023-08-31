@@ -132,7 +132,8 @@
 	display: block;
 	width: 100%;
 	height: var(--button_input_height);
-	background: rgba(var(--black_rgb), 0.1);
+	// background: rgba(var(--black_rgb), 0.1);
+	background: #fcfafa;
 	color: rgba(var(--black_rgb), 0.8);
 	font-size: inherit;
 	// font-weight: inherit;
@@ -140,7 +141,7 @@
 	text-align: left;
 	line-height: inherit;
 	padding: 0.6rem 1.6rem;
-	border: 0;
+	border: 0.1rem solid #d8d8d8;
 	border-radius: 0.8rem;
 	outline: none !important;
 	-webkit-box-shadow: none;
