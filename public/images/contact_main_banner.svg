@@ -1,0 +1,28 @@
+<svg width="925" height="840" viewBox="0 0 925 840" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1104.42 165.113L702.979 725.517C657.915 788.426 504.444 755.652 360.192 652.317C215.94 548.982 135.531 414.217 180.595 351.308L582.041 -209.097C627.104 -272.004 780.575 -239.23 924.827 -135.895C1069.08 -32.5606 1149.49 102.206 1104.42 165.113Z" fill="url(#paint0_linear_232_63)"/>
+<g filter="url(#filter0_b_232_63)">
+<circle cx="128" cy="201" r="100" fill="#E51C47"/>
+</g>
+<g filter="url(#filter1_b_232_63)">
+<ellipse cx="381.5" cy="443.361" rx="381.5" ry="360.361" fill="white" fill-opacity="0.45"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M178.209 626H170.191L205 660.81V652.791L178.209 626ZM205 633.432L197.568 626H205V633.432ZM205 680.168L150.831 626H142.813L205 688.187V680.168ZM205 707.546L123.453 626H115.435L205 715.565V707.546ZM205 734.924L96.0755 626H88.0569L205 742.943V734.924ZM205 762.302L68.698 626H60.6791L205 770.321V762.302ZM195.32 780L51 635.68V643.699L187.302 780H195.32ZM167.942 780L51 663.057V671.076L159.924 780H167.942ZM140.564 780L51 690.435V698.454L132.546 780H140.564ZM113.187 780L51 717.813V725.832L105.168 780H113.187ZM85.8091 780L51 745.191V753.209L77.7903 780H85.8091ZM58.4313 780L51 772.568V780H58.4313Z" fill="#E51C47" fill-opacity="0.5"/>
+<defs>
+<filter id="filter0_b_232_63" x="-0.364117" y="72.6359" width="256.728" height="256.728" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="14.1821"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_232_63"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_232_63" result="shape"/>
+</filter>
+<filter id="filter1_b_232_63" x="-100.66" y="-17.6596" width="964.319" height="922.042" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="50.3298"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_232_63"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_232_63" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_232_63" x1="357.16" y1="73.6946" x2="895.66" y2="488.695" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E51C47"/>
+<stop offset="1" stop-color="#F9BDC9" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
